@@ -1,0 +1,74 @@
+Quy trình phân tích mạng lưới diễn viên điện ảnh (cuối cùng)
+
+Bước 1 — Xác định phạm vi & mục tiêu
+- Mạng vô hướng, có trọng số (weight = số phim chung).
+- Mục tiêu: xác định trung tâm, cộng đồng, đặc điểm kết nối.
+
+Bước 2 — Thu thập & chuẩn hóa dữ liệu
+- Thu thập: phim, diễn viên.
+- Chuẩn hóa tên, gán ID duy nhất cho phim và diễn viên.
+- Loại trùng và self-loop.
+
+Bước 3 — Thiết kế bảng dữ liệu
+- movies_actors: (movie_id, actor_id[, year]).
+- Đảm bảo mỗi dòng duy nhất, có ánh xạ ID–Tên rõ ràng.
+
+Bước 4 — Nodes (thuộc tính diễn viên)
+- Tối thiểu: id, label.
+- Có thể thêm: giới tính, năm sinh, vùng miền, giải thưởng…
+
+Bước 5 — Edges (quan hệ hợp tác)
+- Sinh cặp diễn viên trong mỗi phim.
+- Gộp lại theo (A,B), trọng số = số phim chung.
+- Loại self-loop, gộp multi-edge.
+
+Bước 6 — Xuất file nodes.csv & edges.csv
+- Định dạng chuẩn UTF-8.
+- Nodes: id, label, thuộc tính.
+- Edges: source, target, weight (undirected).
+
+Bước 7 — Import vào Gephi
+- Import nodes.csv và edges.csv.
+- Chọn Undirected graph.
+- Kiểm tra số node/edge, loại bỏ lỗi.
+
+Bước 8 — Thống kê & mô tả mạng
+- Chạy Average Degree, Density, Connected Components, Clustering Coefficient, Network Diameter.
+- Ghi nhận các chỉ số mô tả mạng.
+
+Bước 9 — Phân tích trung tâm
+- Degree, Weighted Degree.
+- Betweenness, Closeness.
+- Eigenvector/PageRank.
+- Xuất Top 10 cho mỗi chỉ số.
+
+Bước 10 — Phát hiện cộng đồng
+- Dùng Modularity (Louvain) trong Gephi.
+- Thử nhiều resolution, ghi modularity score và số cộng đồng.
+- Tùy chọn (có thể có hoặc không): so sánh với thuật toán khác (Girvan–Newman, Spectral clustering) để đối chiếu.
+
+Bước 11 — Trực quan hóa mạng
+- Layout: ForceAtlas2 (hoặc Yifan Hu).
+- Node size = degree, color = community/thuộc tính.
+- Edge thickness = weight.
+- Hiển thị label cho node quan trọng, lọc bớt edge yếu.
+- Xuất hình ảnh PNG/SVG.
+
+Bước 12 — Phân tích theo thời gian (nếu có năm sản xuất)
+- Chia thành các giai đoạn (VD 2000–2009, 2010–2019…).
+- So sánh sự thay đổi về trung tâm, cộng đồng theo thời gian.
+
+Bước 13 — Assortativity (nếu có thuộc tính)
+- Kiểm tra xu hướng hợp tác theo giới tính, vùng miền, thế hệ.
+- Thống kê tỉ lệ cạnh cùng nhóm vs khác nhóm.
+
+Bước 14 — Báo cáo kết quả
+- Tổng hợp số liệu mô tả.
+- Bảng Top 10 trung tâm.
+- Thông tin cộng đồng: số lượng, đặc điểm.
+- Hình ảnh trực quan (1–2 toàn cảnh, 1–2 zoom cộng đồng).
+- Nhận xét & giải thích ngắn gọn.
+
+Bước 15 — Xuất & lưu trữ
+- Xuất hình ảnh, bảng số liệu.
+- Lưu project Gephi và GraphML để tái sử dụng.
