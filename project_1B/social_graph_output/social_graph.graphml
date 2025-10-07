@@ -398,6 +398,7 @@
 </node>
 <node id="A000132">
   <data key="d0">Hồ Quang</data>
+  <data key="d1">10</data>
 </node>
 <node id="A000133">
   <data key="d0">Hồ Quang Mẫn</data>
@@ -1574,7 +1575,6 @@
 </node>
 <node id="A000524">
   <data key="d0">Vương Thanh Tùng</data>
-  <data key="d1">10</data>
 </node>
 <node id="A000525">
   <data key="d0">Will</data>

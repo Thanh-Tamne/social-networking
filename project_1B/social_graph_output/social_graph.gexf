@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2025-10-04">
+  <meta lastmodifieddate="2025-10-06">
     <creator>NetworkX 3.2.1</creator>
   </meta>
   <graph defaultedgetype="undirected" mode="static" name="">
@@ -139,7 +139,11 @@
       <node id="A000129" label="Hải Triều" />
       <node id="A000130" label="Hồ Minh Khuê" />
       <node id="A000131" label="Hồ Minh Ngọc" />
-      <node id="A000132" label="Hồ Quang" />
+      <node id="A000132" label="Hồ Quang">
+        <attvalues>
+          <attvalue for="0" value="10" />
+        </attvalues>
+      </node>
       <node id="A000133" label="Hồ Quang Mẫn" />
       <node id="A000134" label="Hồ Thu Anh" />
       <node id="A000135" label="Hồ Thành Trung" />
@@ -531,11 +535,7 @@
       <node id="A000521" label="Vũ Ngọc Mạnh" />
       <node id="A000522" label="Vũ Trung Đức" />
       <node id="A000523" label="Vũ Đức Ngọc" />
-      <node id="A000524" label="Vương Thanh Tùng">
-        <attvalues>
-          <attvalue for="0" value="10" />
-        </attvalues>
-      </node>
+      <node id="A000524" label="Vương Thanh Tùng" />
       <node id="A000525" label="Will" />
       <node id="A000526" label="Wowy" />
       <node id="A000527" label="Xuân Hinh" />
