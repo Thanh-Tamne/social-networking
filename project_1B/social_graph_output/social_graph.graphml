@@ -251,6 +251,7 @@
 </node>
 <node id="A000083">
   <data key="d0">Hoa Thảo</data>
+  <data key="d1">10</data>
 </node>
 <node id="A000084">
   <data key="d0">Hoài Linh</data>
@@ -398,7 +399,6 @@
 </node>
 <node id="A000132">
   <data key="d0">Hồ Quang</data>
-  <data key="d1">10</data>
 </node>
 <node id="A000133">
   <data key="d0">Hồ Quang Mẫn</data>
