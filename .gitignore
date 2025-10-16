@@ -9,3 +9,5 @@ project_2A/social_networking/traditional/outputs_traditional/svd256.joblib
 project_2A/social_networking/pho_bert/outputs_phobert/phobert_embeddings.npy
 project_2A/social_networking/traditional/outputs_traditional/traditional_embeddings.npy
 project_2A/social_networking/multilingual/outputs/embeddings.npy
+project_2A/social_networking/traditional/svd256.joblib
+project_2A/social_networking/multilingual/outputs_E5/embeddings.npy

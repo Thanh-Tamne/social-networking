@@ -1,0 +1,3 @@
+model,n_components,type,silhouette_metric,silhouette_cosine,DBI,CH,NMI,ARI,Purity
+GMM,10,unsupervised,cosine,0.1834925413131714,3.0047834536126237,1360.8050400048824,,,
+GMM,10,supervised,,,,,0.9127979405048723,0.8198740646143676,0.7922170068769785
